@@ -7,28 +7,23 @@ import Experience from "./components/Experience.jsx";
 function App() {
   return (
     <Container className="container">
-      <h1>My Online Resume</h1>
-      
+      <header className="resume-header">
+        <h1>Henry Pickles</h1>
+        <p>111-111-1111 | pickles4president@nomayo.com</p>
+        <p>Toronto, Ontario</p>
+      </header>
+
+      <h2 className="section-title">Overview</h2>
       <Overview />
+      
 
-      <h2>Education</h2>
-      <Education />
-
-      <h2>Experience</h2>
+      <h2 className="section-title">Experience</h2>
       <Experience />
+   
 
-      <h2>Projects</h2>
-      <ul>
-        <li>🚀 Project 1: Created a full-stack web application using React and Node.js.</li>
-        <li>📊 Project 2: Developed a data visualization dashboard with D3.js.</li>
-        <li>🛒 Project 3: Built an e-commerce site with user authentication and payments.</li>
-      </ul>
 
-      <h2>Certifications</h2>
-      <ul>
-        <li>🎓 Certified React Developer - XYZ Academy</li>
-        <li>🔗 AWS Cloud Practitioner - Amazon Web Services</li>
-      </ul>
+      <h2 className="section-title">Education</h2>
+      <Education />
     </Container>
   );
 }

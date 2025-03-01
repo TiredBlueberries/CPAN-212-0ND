@@ -12,7 +12,6 @@ function Experience() {
 
   return (
     <div style={{ padding: "15px" }}>
-      <h2>Experience</h2>
       {experienceData.map((exp, index) => (
         <p key={index}>
           <strong>{exp.company}</strong> - {exp.role} ({exp.years})

@@ -12,7 +12,6 @@ function Education() {
 
   return (
     <div style={{ padding: "15px" }}>
-      <h2>Education</h2>
       {educationData.map((edu, index) => (
         <p key={index}>
           <strong>{edu.school}</strong> - {edu.degree} ({edu.year})

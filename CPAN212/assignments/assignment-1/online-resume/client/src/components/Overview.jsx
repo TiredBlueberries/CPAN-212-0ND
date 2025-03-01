@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Overview() {
-  const [overview, setOverview] = useState("");
+  const [overview, setOverview] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8000/getOverview")
@@ -12,8 +12,9 @@ function Overview() {
 
   return (
     <div style={{ padding: "15px" }}>
-      <h2>About Me</h2>
-      <p>{overview}</p>
+      {overview.map((sentence, index) => (
+        <p key={index}>{sentence}</p>
+      ))}
     </div>
   );
 }
